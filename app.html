@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APPLICATION</title>
+	<!--bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+ <!-- <style>
+    form
+    {
+      text-align: center;
+      font-weight: bold;
+      /*background-color: yellowgreen;*/
+
+    }
+   table
+   {
+    text-align: center;
+
+   }
+  </style> -->
+ 
+  
+</head>
+
+<body>
+         <!-- navbar -->
+
+         <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><h2>EXPLORE</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">HOME <span class="sr-only">(current)</span><a href="http:www.google.com"></a></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="skilldevpt.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          SKILL DEVLOPMENT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="espj.html">EDUCATION SERVICES AND PROJECT GUIDANCE</a>
+          <a class="dropdown-item" href="cs.html">CONSULTANCY SERVICES</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="tp.html">TECHNICAL PAPER WRITING</a>
+           <a class="dropdown-item" href="fd.html">FACULTY DEVLOPMENT PROGRAM</a>
+
+        </div>
+      </li>
+
+
+
+
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cadcam.html">CAD/CAM</a>
+      </li>
+ <li class="nav-item">
+        <a class="nav-link" href="dl.html">DEEP LEARNING</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="uav.html">UAV SERVICES</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="dm.html">DISASTER MANAGEMENT</a>
+      </li>
+<li class="nav-item">
+        <a class="nav-link" href="app.html">APPLICATION FORM</a>
+      </li>
+
+
+
+
+     
+  </div>
+</nav>
+
+<!-- form -->
+
+
+  
+  
+
+
+<form action="form1.php" method="POST">
+      <fieldset>
+      <legend style="color: blue";>PLEASE FILL IN THE DETAILS:</legend>
+      <br>
+     <h6 style="color: blue;">NAME</h6>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" name="firstname" placeholder="First name" required="">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" name="lastname"placeholder="Last name" required="">
+    </div>
+  </div>
+      
+      <br>
+      
+     <h6 style="color: blue;">Gender :</h6>
+    
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+     <br>
+     <br>
+<h6 style="color: blue;">Address</h6>
+  <div class="form-row">
+    <div class="col-7">
+      <input type="text" name="city"class="form-control" placeholder="City" required="">
+    </div>
+    <div class="col">
+      <input type="text"name="state" class="form-control" placeholder="State" required="">
+    </div>
+    <div class="col">
+      <input type="text"name="Zip" class="form-control" placeholder="Zip" required="">
+    </div>
+  </div>
+
+    <br>
+   <h6 style="color: blue;"> Email :</h6>
+    <input type="email" name="email" required>
+    <br>
+
+<h5 style="text-align: center;color: blue;">YOUR FIELD OF INTEREST:</h5>
+<div class="form-check" style="text-align: center;">
+  <input class="form-check-input" type="radio" name="fieldofinterest" id="exampleRadios1" value="a" required>
+  <label class="form-check-label" for="exampleRadios1">
+    skill development(a)
+  </label>
+</div>
+<div class="form-check"style="text-align: center;">
+  <input class="form-check-input" type="radio" name="fieldofinterest" id="exampleRadios2" value="b" required>
+  <label class="form-check-label" for="exampleRadios2">
+    cad/cam(b)
+  </label>
+</div>
+<div class="form-check"style="text-align: center;">
+  <input class="form-check-input" type="radio" name="fieldofinterest" id="exampleRadios3" value="c" required>
+  <label class="form-check-label" for="exampleRadios3">
+    deep learning(c)
+  </label>
+</div>
+
+<div class="form-check"style="text-align: center;">
+  <input class="form-check-input" type="radio" name="fieldofinterest" id="exampleRadios4" value="d" required>
+  <label class="form-check-label" for="exampleRadios4" >
+    UAV(d)
+  </label>
+</div>
+
+<div class="form-check"style="text-align: center;">
+  <input class="form-check-input" type="radio" name="fieldofinterest" id="exampleRadios5" value="e" required>
+  <label class="form-check-label" for="exampleRadios5">
+    disaster management(e)
+  </label>
+</div>
+
+
+
+<br>
+<h6 style="text-align: center;color: blue;">YOUR REQUIREMENTS IN BRIEF:</h6>
+<br>
+<textarea rows="5" cols="170" name="DETAILS" style="color: blue">enter details here...</textarea>
+
+  
+  </fielset>    
+
+
+  <button class="btn btn-primary" type="submit">SUBMIT</button>
+
+</form>   
+
+
+     
+
+
+</html>
